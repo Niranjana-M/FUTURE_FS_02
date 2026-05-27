@@ -3,7 +3,6 @@ import Login from "./Login";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
-
 function App() {
   const [leads, setLeads] = useState([]);
   const [search, setSearch] = useState("");
@@ -41,10 +40,10 @@ useState(
   };
 
 const addLead = async (e) => {
-  e.preventDefault(); // 🔥 THIS FIXES YOUR ISSUE
+  e.preventDefault(); 
 
   try {
-    await axios.post("http://localhost:5000/api/leads/add", {
+    await axios.post("https://future-fs-02-xux5.onrender.com", {
       name: formData.name,
       email: formData.email,
       source: formData.source,
@@ -67,7 +66,7 @@ const addLead = async (e) => {
   const updateStatus = async (id, status) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/leads/${id}`,
+        `https://future-fs-02-xux5.onrender.com${id}`,
         { status }
       );
 
@@ -80,7 +79,7 @@ const addLead = async (e) => {
   const deleteLead = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/leads/${id}`
+        `https://future-fs-02-xux5.onrender.com${id}`
       );
 
       fetchLeads();
