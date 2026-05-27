@@ -1,28 +1,14 @@
 const express = require("express");
-
 const router = express.Router();
 
+// SIMPLE LOGIN (NO DATABASE)
 router.post("/login", (req, res) => {
-
-  const { email, password } = req.body;
-
-  if (
-    email === "admin@gmail.com" &&
-    password === "admin123"
-  ) {
-
-    res.json({
-      success: true,
-    });
-
-  } else {
-
-    res.status(400).json({
-      message: "Invalid Credentials",
-    });
-
-  }
-
+  res.json({
+    message: "Login successful",
+    user: {
+      name: "Admin"
+    }
+  });
 });
 
 module.exports = router;
