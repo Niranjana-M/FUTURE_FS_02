@@ -7,7 +7,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/login", {
+      const res = await axios.post("https://future-fs-02-xux5.onrender.com/login", {
         email,
         password,
       });
