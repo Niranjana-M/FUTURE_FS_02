@@ -1,16 +1,23 @@
 📊 Mini CRM System
 
-A simple Customer Relationship Management (CRM) web application built using the MERN stack. This project helps manage customer leads with basic authentication and CRUD operations.
+A modern and simple Customer Relationship Management (CRM) web application built using the MERN stack.
+This project helps manage customer leads efficiently with authentication and full CRUD operations.
+
+✨ Overview
+
+This application allows users to manage and track customer leads in one place.
+It includes a login system and a clean dashboard to view, add, update, search, and delete leads.
+
+Built as a full-stack project to strengthen understanding of real-world web application development.
 
 🚀 Features
-
-User Login
-Add new leads
-View all leads
-Search leads
-Update lead status
-Delete leads
-MongoDB database integration
+🔐 User Authentication (Login)
+➕ Add new leads
+📋 View all leads
+🔍 Search functionality
+✏️ Update lead status (New / Contacted / Converted)
+❌ Delete leads
+💾 MongoDB database integration
 
 🛠️ Tech Stack
 React.js
@@ -19,32 +26,9 @@ Express.js
 MongoDB
 Axios
 
-📁 Project Structure
-frontend/
-  src/
-    App.js
-    Login.js
-    App.css
-
-server/
-  models/
-  routes/
-  server.js
-  .env
-  
-⚙️ Setup Instructions
-Backend
-cd server
-npm install
-npm start
-
-Create .env file:
-
-Frontend
-cd frontend
-npm install
-npm start
-
 👨‍💻 Author
-
 Niranjana M
+
+⭐ Note
+
+This project was built for learning and practicing full-stack development using the MERN stack.
